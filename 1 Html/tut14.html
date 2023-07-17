@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS selector</title>
+    <!-- internal css -->
+    <style>
+
+        /* element selector */
+    p{
+        border: 2px solid red;
+    }
+
+        /* id selector use id to select any property for any single element */
+        #pinkElement{
+             color: pink;
+    }
+    /* class selector */
+    .bgBlue{
+        background-color:slategrey;
+    }
+    .slateblueElement{
+        color: slateblue;
+        
+    }
+    /* combined grouping selector */
+    footer,span{
+        background-color: palevioletred;
+
+    }
+    </style>
+</head>
+<body>
+
+    <h3>CSS selector</h3>
+   <!-- id will not work because class is same and only one id work classes will be multiple -->
+    <p id="first para" class="pinkElement bgBlue">This is a simple selector in CSS</p>
+
+    <p id="pinkElement">This is a simple selector</p>
+    <div>
+        <p id="third para" class="slateblueElement">This is a simple selector paragraph inside div to demonstrate CSS selectortryetrytruytryeztruytryeztryeztyuetryutyetryutruytryeztyrtzey</p>
+
+        <span>this is span</span>
+    </div>
+    <!-- grouping selector -->
+    <footer>This is footer </footer>
+    
+</body>
+</html>
