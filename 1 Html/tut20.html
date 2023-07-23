@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Box model</title>
+    <style>
+        /* universal selector */
+   *{
+    box-sizing: border-box;
+    margin: 0px;
+    padding: 0px;
+   }
+   body{
+ background-color: green;
+   }
+
+      .container{
+    background-color: aquamarine;
+    border: 3px solid gray;
+    /* padding is used inside border spacing used
+       padding-top: 56px;
+       padding-bottom: 56px;
+       padding-left: 34px; 
+       padding-right: 34px; */
+
+       /* shortcut key  top right bottom left
+         padding: 23px 45px 6px 78px;  */
+
+         /* padding: y(top/bottom) x(left/right); */
+         padding: 34px 19px;
+
+       /* all four corners 
+       margin: 34px;
+     margin-top: 34px;*/
+          margin: 14px 19px;
+
+          border-radius: 23px;
+          width: 533px;
+          /* adjust width by itself 
+          box-sizing: border-box;*/
+      }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h3>This is heading</h3>
+        <p id="first">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolor non soluta quasi minus rerum repellat, doloribus pariatur vel impedit fugit ab ea nemo.</p>
+    </div>
+
+    <div class="container">
+        <h3>This is heading</h3>
+        <p id="second">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolor non soluta quasi minus rerum repellat, doloribus pariatur vel impedit fugit ab ea nemo.</p>
+    </div>
+
+    <div class="container">
+        <h3>This is heading</h3>
+        <p id="third">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolor non soluta quasi minus rerum repellat, doloribus pariatur vel impedit fugit ab ea nemo.</p>
+    </div>
+    
+</body>
+</html>
