@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flexbox</title>
+    <style>
+        .container{
+           height: 544px;
+           width: 100%;
+           border: 2px solid black;
+           /* flex container property */
+           display: flex;
+           /* Flex properties for flex container */
+
+           /* by defalut they are in row so no change */
+           flex-direction: row;
+
+/* will be filled in coloumns 
+           /* flex-direction: column; */
+
+/* reverse fill 
+           /* flex-direction: row-reverse; */
+
+           /* reverse fill from downward 
+           /* flex-direction: column-reverse; */
+
+           /* they are use for responsive design  */
+           flex-wrap: wrap;
+
+           /* will wrap in reverse direction 
+           /* flex-wrap: wrap-reverse; */
+
+      /* both properties will combine in this flex-direction and flex-wrap */
+           flex-flow: row-reverse wrap;
+
+        } 
+        .item{
+            width: 200px;
+            height: 200px;
+            background-color: tomato;
+            border: 2px solid goldenrod;
+            margin: 10px; 
+            padding: 3px;
+        }
+    </style>
+</head>
+<body>
+    <h1>This is Flexbox tutorial</h1>
+
+    <div class="container">
+        <div class="item" id="item1">FirstBox</div>
+        <div class="item" id="item2">SecondBox</div>
+        <div class="item" id="item3">ThirdBox</div>
+        <div class="item" id="item4">FourthBox</div>
+        <div class="item" id="item5">FifthBox</div>
+        <div class="item" id="item6">SixthBox</div>
+    </div>
+    
+</body>
+</html>

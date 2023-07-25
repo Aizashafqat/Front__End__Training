@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Visibility and Zindex</title>
+    <style>
+        .box{
+            width: 170px;
+            height: 170px;
+            border: 2px solid black;
+        } 
+
+        #box1{
+            top: 49px;
+            position: relative;
+            /* elelment with bigger z-index will come on top */
+             z-index: 35;
+
+
+            /* z-index: will work for position relative,absolute,fixed,sticky; */
+
+            /* that will b hidden 
+            visibility: hidden; */
+
+         /* white spaces will not be seen 
+             display: none;  */
+
+            background-color: brown;
+        } 
+        #box2{
+            position: relative;
+          top: 14px;
+          z-index: -1;
+            /* that will be visible  
+            visibility: visible; */
+
+            background-color: goldenrod;
+        } 
+        #box3{
+            background-color: indianred;
+        } 
+        #box4{
+            background-color: sandybrown;
+        } 
+    </style>
+</head>
+<body>
+    <!-- div.box#box$*4 -->
+    <div class="box" id="box1"></div>
+    <div class="box" id="box2"></div>
+    <div class="box" id="box3"></div>
+    <div class="box" id="box4"></div>
+    
+</body>
+</html>
