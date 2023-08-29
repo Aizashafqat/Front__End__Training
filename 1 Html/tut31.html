@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>More on CSS selector</title>
+    <style>
+        h1{
+            background-color: violet;
+            color: black;
+            font-weight: bold;
+            text-align: center;
+        }
+        /* div li p{ 
+            this is for para inside li
+             this is only for those iside div 
+            color: aqua;
+            font-weight: bold;
+             background-color: teal; 
+         } */
+
+     /* this > is use for direct  */
+        div > p{
+            /* this is only for those iside div */
+            color: aqua;
+            font-weight: bold;
+            background-color: teal;
+        }
+
+        div + p{
+            color: brown;
+            background-color: grey;
+        }
+    </style>
+</head>
+<body>
+    <h1>This is more on selector</h1>
+    <div class="container">
+        <div class="row">
+            <ul>
+                <li class="item"><p>This is another paragraph inside div</p></li>
+                <li>This will not get afected</li>
+            </ul>
+            <p>This is a paragraph</p>
+        </div>
+        <p>This is another paragraph</p>
+    </div>
+    <p>This is outer most paragraph</p>
+    
+</body>
+</html>
