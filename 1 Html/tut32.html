@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Attribute & nth child pseudo Selectors</title>
+    <style>
+
+        .container{
+            display: block;
+            margin:34px 23px ;
+            width:233px ;
+            margin: auto;
+
+        }
+        input{
+      display: block;
+        }
+        /* only apply for input type */
+        input[type='text']{
+            padding: 23px;
+            border: 2px solid red;
+        }
+        /* this will work for both */
+        a[target]{
+            font-size: 34px;
+            color: palevioletred;
+        }
+        a[target='_self']{
+            font-size: 34px;
+            color: rgb(77, 112, 185);
+        }
+        input[type='email']{
+            color: hotpink;
+            border: 2px solid black;
+        }
+
+        /* this will apply property in position number three 
+        li:nth-child(3)
+        {
+            color: rosybrown;
+         } */
+
+        /* this will apply pcss at every 2nd position  
+        li:nth-child(2n+0)
+        {
+            color: lawngreen; 
+        } */
+
+      /* odd child 
+        /* li:nth-child(odd) 
+        {
+            color: goldenrod;
+         } */
+  /* even child */
+        li:nth-child(even)
+        {
+        background-color: blue;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <!-- target blank is for opening into new tab -->
+        <h1><a href="http://google.com" target="_blank">Go to google</a></h1>
+        <h1><a href="http://facebook.com" target="_self">Go to facebook</a></h1>
+        <form action="" class="formcontrol"></form>
+        <input type="text" placeholder="Enter your name">
+        <input type="email" placeholder="Enter your email">
+        <input type='password' placeholder="Enter your password">
+         <input type="submit=" value="Submit">
+        
+        <ul>
+           <li class="item" id="item-1">item-1</li>
+           <li class="item" id="item-2">item-2</li>
+           <li class="item" id="item-3">item-3</li>
+           <li class="item" id="item-4">item-4</li>
+           <li class="item" id="item-5">item-5</li>
+           <li class="item" id="item-6">item-6</li>
+           <li class="item" id="item-7">item-7</li>
+           <li class="item" id="item-8">item-8</li>
+           <li class="item" id="item-9">item-9</li>
+           <li class="item" id="item-10">item-10</li>
+        </ul>
+    </div>
+    
+</body>
+</html>
