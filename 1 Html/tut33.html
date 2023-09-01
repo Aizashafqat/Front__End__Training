@@ -8,21 +8,35 @@
         body{
             margin: 0px;
             padding: 0px;
-            background-color: cornflowerblue;
-            color: cornsilk;
+           ;
+            color: blanchedalmond;
         } 
         /* all of them will be in one line  */
         .navigation{
             font-size: 25px;
             display: flex;
+
         }
-        li{
-             list-style: none;
-             padding: 34px 23px;
+            li{
+                list-style: none;
+                padding: 20px 23px;
+            }
+            header::before
+            {
+                content: "";
+                background: url(https://images.unsplash.com/photo-1595675024853-0f3ec9098ac7?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NXx8c291cmNlJTIwZm9yJTIwY29kaW5nJTIwbWF0ZXJpYWx8ZW58MHx8MHx8fDA%3D&auto=format&fit=crop&w=500&q=60) no-repeat center/cover;
+        position: absolute;
+        top: 0;
+        left: 0;
+        /* this will make image light 
+        /* opacity:0.2; */
+        width: 100%;
+       height: 100%;
+       /* for showing of content */
+       z-index: -1;
         }
         section{
             height: 344px;
-            border: 2px solid black;
             padding: 3px 23px;
             display: flex;
             flex-direction: column;
@@ -58,12 +72,15 @@
                 <li class="item">Contact Us</li>
             </ul>
         </nav>
-        <section>
-            <h1>Welcome to Coding World </h1>
-                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Omnis optio a corrupti, ex labore ut? Veritatis nemo dolorum consectetur fuga saepe cum commodi, dolorem sequi, iste corporis deserunt vero, ipsa cumque tempora sint reiciendis!</p>
-        </section>
-
+       
     </header>
+    <section>
+        <h1>Welcome to Coding World </h1>
+            
+    </section>
+    <!-- line will be created at the end -->
+    <!-- <hr> -->
+
     
 </body>
 </html>
