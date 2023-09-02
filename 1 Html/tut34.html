@@ -3,9 +3,52 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Box Shadow and Text Shadow</title>
+    <style>
+        .container{
+            /* all in straight line */
+               display: flex;
+        }
+        .card{
+            padding: 23px 12px;
+            /* spaces from up and down */
+            margin: 23px 12px;
+            /* border: 2px solid thistle; */
+            background-color: burlywood;
+             /* box-shadow: offset-x offset-y colour;  */
+              /* box-shadow: offset-x offset-y blur-radius colour;  */
+              /* box-shadow: offset-x offset-y blur-radius spread-radius colour;  */
+           
+            box-shadow: 10px 13px 10px 34px palevioletred;
+          
+            /* inset will increase radius from inside */
+            box-shadow: inset 3px 5px palevioletred, 3px 5px red;
+            
+        }
+        .card h2{
+            text-shadow:3px 4px rebeccapurple ;
+        }
+    </style>
 </head>
 <body>
-    
+    <div class="container">
+    <div class="card" id="card-1">
+
+        <h2>This is c++ course</h2>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. In corrupti totam, aperiam voluptas adipisci voluptatum temporibus aut eum illum! Id officiis veritatis libero nesciunt placeat natus architecto reprehenderit atque hic, praesentium dolore ex accusantium.</p>
+    </div>
+
+    <div class="card" id="card-2">
+
+       <h2>This is html course</h2>
+       <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur temporibus voluptates ullam quia libero quas recusandae, earum consequatur, corrupti ab illo quis aliquam laborum vitae reprehenderit, distinctio facilis deserunt perspiciatis! Magnam voluptate soluta itaque.</p>
+    </div>
+
+    <div class="card" id="card-3">
+
+        <h2>Card</h2>
+        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Architecto ipsum temporibus debitis veritatis iure! Minima et illum recusandae cupiditate ea culpa quae expedita omnis reprehenderit nobis error atque aliquam, tempora est! A, voluptas quibusdam.</p>
+    </div>
+</div>
 </body>
 </html>
