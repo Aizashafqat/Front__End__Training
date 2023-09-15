@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Media Queries with CSS Grid</title>
+    <style>
+        .container {
+            display: grid;
+            grid-gap: 1rem;
+            grid-template-areas:
+                'navbar navbar navbar navbar'
+                'section section section section'
+                'footer footer footer footer';
+
+        }
+
+        @media (max-width:300px) {
+
+            /* when width will be 500px box-1 will be shown before this width nothing wll be shown  */
+            body {
+                background-color: blueviolet;
+            }
+
+            grid-template-areas:
+            /* adding this will show content included in these */
+            'navbar navbar navbar navbar'
+            'section section section section'
+            'aside aside aside aside '
+            'footer footer footer footer';
+        }
+
+        @media (min-width:300px) and (max-width:500px) {
+            body {
+                background-color: red;
+            }
+
+            .container {
+                grid-template-areas:
+                    /* adding this will show content included in these */
+                    'navbar navbar navbar navbar'
+                    'section section section section'
+                    'footer footer footer footer';
+            }
+
+            /* aside content will not shown */
+            aside {
+                display: none;
+            }
+        }
+
+        @media(min-width:500px) and (max-width:800px) {
+            body {
+                background-color: fuchsia;
+            }
+
+            .container {
+                grid-template-areas:
+                    /* adding this will show content included in these */
+                    'navbar navbar navbar navbar'
+                    'section section section section'
+                    'aside aside aside aside '
+                    'footer footer footer footer';
+            }
+
+            /* with this only this colour box with span content change*/
+            span {
+                display: block;
+                text-align: center;
+            }
+
+        }
+
+        @media(min-width:800px) and (max-width:1000px) {
+            body {
+                background-color: palegreen;
+            }
+        }
+
+        .bdr {
+            border: 2px solid green;
+            padding: 23px;
+            background-color: wheat;
+
+        }
+
+        nav {
+            grid-area: navbar;
+        }
+
+        section {
+            grid-area: section;
+        }
+
+        aside {
+            grid-area: aside;
+        }
+
+        footer {
+            grid-area: footer;
+            text-align: center;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <nav class="bdr">
+            <span>Home</span>
+            <span>AboutUs</span>
+            <span>Services</span>
+            <span>ContactUs</span>
+        </nav>
+        <section class="bdr">
+            <h2>Learn CSS in English</h2>
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Explicabo nisi blanditiis eveniet eligendi?
+                Nostrum culpa cum iure error facere. Autem sed delectus sequi libero ipsa distinctio aspernatur, laborum
+                molestiae quos itaque? Libero officiis iste veritatis eos porro culpa, corporis sunt distinctio, cumque
+                recusandae natus corrupti. Qui nemo perspiciatis ad quis repellat. Repellendus at laborum corporis eum
+                quis facilis rerum, temporibus autem omnis dolores porro ab quod itaque et fugiat. Nam sint quos
+                similique non velit! Sed consectetur, magni dolorem et facilis nesciunt odio quis, ratione ad sunt sit
+                corrupti officia alias, fuga error labore laboriosam quod possimus dolores reiciendis praesentium vitae
+                at tempore? Ducimus aperiam voluptatum cumque officia ab soluta, omnis culpa placeat quis, expedita enim
+                vel autem similique. Sapiente, totam numquam.</p>
+        </section>
+        <aside class="bdr">
+
+            <h1>More About us</h1>
+        </aside>
+    </div>
+    <footer class="bdr">Copyright codewithme</footer>
+</body>
+
+</html>
